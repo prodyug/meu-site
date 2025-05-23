@@ -1,0 +1,162 @@
+/* Estilo geral */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0077ff;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    color: #0077ff;
+    margin-bottom: 20px;
+}
+
+/* Sobre mim */
+.sobre img {
+    width: 200px;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Lista de projetos */
+.projetos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projetos li {
+    background-color: #e6f0ff;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+/* Contato */
+.contato a {
+    color: #0077ff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0077ff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/* Animação de aparecer suavemente */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+}
+.projetos li {
+    background-color: #e6f0ff;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.projetos li:hover {
+    transform: scale(1.05);
+    background-color: #cce0ff;
+}
+.contato a {
+    color: #0077ff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contato a:hover {
+    color: #005fcc;
+    transform: scale(1.1);
+}
+body {
+    opacity: 0;
+    animation: fadeInBody 1.5s forwards;
+}
+
+@keyframes fadeInBody {
+    to {
+        opacity: 1;
+    }
+}
+/* Botão de modo claro/escuro */
+.modo-btn {
+    background-color: white;
+    color: #0077ff;
+    border: 2px solid #0077ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.modo-btn:hover {
+    background-color: #0077ff;
+    color: white;
+}
+/* Tema escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode section h2 {
+    color: #4dabf7;
+}
+
+body.dark-mode .projetos li {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .projetos li:hover {
+    background-color: #333;
+}
+
+body.dark-mode .contato a {
+    color: #4dabf7;
+}
+
+body.dark-mode .contato a:hover {
+    color: #82caff;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+}
